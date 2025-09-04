@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-image: url('../images/baseweb.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding: 40px 20px;
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px;
+  border-radius: 0%;
+  backdrop-filter: blur(1px);
+  aspect-ratio: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 40px;
+  font-size: 2.5rem;
+}
+
+.links-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  max-width: 600px;
+}
+
+.page-link {
+  display: block;
+  padding: 8px 15px;
+  background-color: transparent;
+  color: #333;
+  text-decoration: none;
+  border: 2px solid #007bff;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  min-width: 80px;
+  text-align: center;
+  font-size: 14px;
+}
+.page-link img {
+  width: auto;
+  height: 200px;
+  border-radius: 10px;
+  margin-bottom: 5px;
+}
+.page-link:hover {
+  background-color: #007bff;
+  color: white;
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 123, 255, 0.3);
+}
+
+.page-link:active {
+  transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+  .container {
+      padding: 20px;
+  }
+  
+  h1 {
+      font-size: 2rem;
+      margin-bottom: 30px;
+  }
+  
+  .page-link {
+      min-width: 100px;
+      padding: 10px 15px;
+  }
+}
